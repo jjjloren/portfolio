@@ -1,0 +1,66 @@
+.leader {
+    &-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    &-header {
+        margin-bottom: 2rem;
+
+        h2 {
+            &::after {
+                content: '';
+                height: 2px;
+                width: 25%;
+                margin-top: 1rem;
+                display: block;
+                background-color: $primary;
+            }
+
+        }
+
+        p#header-description {
+            width: 60%;
+            margin: auto;
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    &-box {
+        flex-basis: 18%;
+        margin-bottom: 2rem;
+        text-align: center;
+
+        img {
+            width: 100%;
+            border-radius: .5rem;
+        }
+
+        h5 {
+            margin-top: 1rem;
+            margin-bottom: .5rem;
+        }
+    }
+
+    &-footer {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    #leader-page-header {
+        margin-bottom: 4rem;
+        text-align: center;
+
+        h2 {
+            &::after {
+                margin: 1rem auto;
+            }
+        }
+    }
+}

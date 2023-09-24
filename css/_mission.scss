@@ -1,0 +1,40 @@
+.mission {
+    &-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    &-header {
+        h2 {
+            &::after {
+                content: '';
+                height: 2px;
+                width: 30%;
+                margin-top: 1rem;
+                display: block;
+                background-color: $primary;
+            }
+        }
+
+        margin-bottom: 2rem;
+    }
+
+    &-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    &-box {
+        border-radius: 1rem;
+        padding: 2rem;
+        padding-bottom: 4rem;
+        background-color: $secondary-div;
+        flex: 1;
+        flex-basis: 31%;
+
+        p {
+            margin-top: 1rem;
+        }
+    }
+}

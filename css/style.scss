@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+$primary-text :#1C1C1C;
+$secondary-div : #F2F2F2;
+$primary : #007042;
+$secondary-text : #717171;
+
+section {
+    padding: 5rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Playfair Display', serif;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: $primary;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: .5rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: darken($primary, 10%);
+    }
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    color: $primary;
+    border: 1px solid $primary;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: .5rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $primary;
+        color: #fff;
+    }
+}
+
+p {
+    color: $secondary-text;
+    line-height: 28px;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+.subheading {
+    letter-spacing: 10px;
+    color: $primary;
+}
+
+@import 'navbar';
+@import 'jumbotron';
+@import 'stories';
+@import 'products';
+@import 'mission';
+@import 'stores';
+@import 'leader';
+@import 'milestone';
+@import 'footer';
+@import 'gift';
+@import 'news';
+@import 'about';
+
+@import 'responsive';

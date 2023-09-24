@@ -1,0 +1,70 @@
+.navbar {
+    width: 100%;
+    padding: 2rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .active {
+        color: $primary;
+        font-weight: 600;
+
+    }
+}
+
+.navbar .logo {
+    img {
+        width: 140px;
+    }
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 2rem;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    color: $secondary-text;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        border-radius: 100px;
+        background-color: $primary;
+        transition: width .3s ease-in;
+    }
+
+    &:hover {
+        color: $primary;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+
+.navbar .menu-btn {
+    cursor: pointer;
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}

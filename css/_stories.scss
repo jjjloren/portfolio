@@ -1,0 +1,30 @@
+.stories {
+    margin: 5rem 0;
+    background-color: $secondary-div;
+
+    &-container {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+
+    &-header {
+        h2 {
+            &::after {
+                content: '';
+                height: 2px;
+                width: 70%;
+                margin: auto;
+                margin-top: 1rem;
+                display: block;
+                background-color: $primary;
+            }
+        }
+    }
+
+    &-content {
+        p {
+            margin: 1rem 0;
+        }
+    }
+}

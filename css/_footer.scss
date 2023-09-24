@@ -1,0 +1,46 @@
+.footer {
+    padding: 4rem 0;
+    background-color: $primary;
+    color: #fff;
+
+    &-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 5rem;
+    }
+
+    &-box {
+        flex: 1;
+
+        p {
+            color: #fff;
+        }
+
+        h5 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            li {
+                line-height: 30px;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    #last-footer-box {
+        flex: 1.5;
+    }
+}

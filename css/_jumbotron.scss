@@ -1,0 +1,30 @@
+.jumbotron {
+    padding: 2.5rem 0;
+
+    &-container {
+        width: 90%;
+        margin: auto;
+        gap: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &-left {
+        flex: 1;
+
+        p {
+            margin: 1rem 0;
+        }
+    }
+
+    &-right {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+
+        img {
+            width: 70%;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.products {
+    &-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    &-header {
+        text-align: center;
+
+        h2 {
+            &::after {
+                content: '';
+                height: 2px;
+                width: 15%;
+                margin: auto;
+                margin-top: 1rem;
+                display: block;
+                background-color: $primary;
+            }
+        }
+    }
+
+    &-content {
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    &-box {
+        flex: 1;
+        flex-basis: 31.5%;
+        padding: 2rem;
+        border-radius: 1rem;
+        background-color: $secondary-div;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: lighten($primary, 10%);
+
+            h5 {
+                color: #fff;
+            }
+
+            p {
+                color: rgba($color: #fff, $alpha: 0.6);
+            }
+
+        }
+
+        h5 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: $primary-text;
+        }
+
+        p {
+            color: $secondary-text;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            transition: all 0.3s ease;
+
+        }
+    }
+
+    &-footer {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+}

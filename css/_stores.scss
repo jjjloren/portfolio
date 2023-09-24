@@ -1,0 +1,67 @@
+.stores {
+    &-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    #stores-page-header {
+        text-align: center;
+
+        h2 {
+            &::after {
+                margin: 1rem auto;
+            }
+        }
+    }
+
+    #header-description {
+        width: 80%;
+        margin: auto;
+    }
+
+    &-header {
+
+        h2 {
+            &::after {
+                content: '';
+                height: 2px;
+                width: 35%;
+                margin-top: 1rem;
+                display: block;
+                background-color: $primary;
+            }
+        }
+    }
+
+    &-content {
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    &-box {
+        flex: 1;
+        flex-basis: 31.5%;
+        text-align: center;
+
+        h4 {
+            margin-top: 1rem;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 1rem;
+        }
+
+        h5 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &-footer {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
